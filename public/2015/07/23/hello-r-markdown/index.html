@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+<title>Hello R Markdown - A Hugo website</title>
+<meta property="og:title" content="Hello R Markdown - A Hugo website">
+
+
+  <link href='../../../../favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Hello R Markdown</h1>
+
+    
+    <span class="article-date">2015-07-23</span>
+    
+
+    <div class="article-content">
+      
+
+
+<div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre><code>## # A tibble: 1 x 10
+##   title id    topics civic_issues excerpt dataset_category num_resources formats
+##   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;        &lt;chr&gt;   &lt;chr&gt;                    &lt;int&gt; &lt;chr&gt;  
+## 1 Neig… fc4d… &lt;NA&gt;   &lt;NA&gt;         &lt;NA&gt;    &lt;NA&gt;                         1 &lt;NA&gt;   
+## # … with 2 more variables: refresh_rate &lt;chr&gt;, last_refreshed &lt;date&gt;</code></pre>
+<pre><code>## Simple feature collection with 140 features and 61 fields
+## geometry type:  POLYGON
+## dimension:      XY
+## bbox:           xmin: -79.63923 ymin: 43.581 xmax: -79.1152 ymax: 43.85545
+## CRS:            EPSG:4326
+## # A tibble: 140 x 62
+##    `_id` OBJECTID Neighbourhood Hood_ID Population Assault_2014 Assault_2015
+##    &lt;int&gt;    &lt;int&gt; &lt;chr&gt;         &lt;chr&gt;        &lt;int&gt;        &lt;int&gt;        &lt;int&gt;
+##  1     1       16 South Parkda… 085          21849          202          226
+##  2     2       17 South Riverd… 070          27876          215          207
+##  3     3       18 St.Andrew-Wi… 040          17812           53           41
+##  4     4       19 Taylor-Massey 061          15683          127           92
+##  5     5       20 Humber Summit 021          12416           76           89
+##  6     6       21 Humbermede    022          15545          117          132
+##  7     7       22 Centennial S… 133          13362           50           39
+##  8     8       23 Church-Yonge… 075          31340          480          495
+##  9     9       24 Clairlea-Bir… 120          26984          247          259
+## 10    10       25 Cliffcrest    123          15935           79           97
+## # … with 130 more rows, and 55 more variables: Assault_2016 &lt;int&gt;,
+## #   Assault_2017 &lt;int&gt;, Assault_2018 &lt;int&gt;, Assault_2019 &lt;int&gt;,
+## #   Assault_AVG &lt;dbl&gt;, Assault_CHG &lt;dbl&gt;, Assault_Rate_2019 &lt;dbl&gt;,
+## #   AutoTheft_2014 &lt;int&gt;, AutoTheft_2015 &lt;int&gt;, AutoTheft_2016 &lt;int&gt;,
+## #   AutoTheft_2017 &lt;int&gt;, AutoTheft_2018 &lt;int&gt;, AutoTheft_2019 &lt;int&gt;,
+## #   AutoTheft_AVG &lt;dbl&gt;, AutoTheft_CHG &lt;dbl&gt;, AutoTheft_Rate_2019 &lt;dbl&gt;,
+## #   BreakandEnter_2014 &lt;int&gt;, BreakandEnter_2015 &lt;int&gt;,
+## #   BreakandEnter_2016 &lt;int&gt;, BreakandEnter_2017 &lt;int&gt;,
+## #   BreakandEnter_2018 &lt;int&gt;, BreakandEnter_2019 &lt;int&gt;,
+## #   BreakandEnter_AVG &lt;dbl&gt;, BreakandEnter_CHG &lt;dbl&gt;,
+## #   BreakandEnter_Rate_2019 &lt;dbl&gt;, Homicide_2014 &lt;int&gt;, Homicide_2015 &lt;int&gt;,
+## #   Homicide_2016 &lt;int&gt;, Homicide_2017 &lt;int&gt;, Homicide_2018 &lt;int&gt;,
+## #   Homicide_2019 &lt;int&gt;, Homicide_AVG &lt;dbl&gt;, Homicide_CHG &lt;dbl&gt;,
+## #   Homicide_Rate_2019 &lt;dbl&gt;, Robbery_2014 &lt;int&gt;, Robbery_2015 &lt;int&gt;,
+## #   Robbery_2016 &lt;int&gt;, Robbery_2017 &lt;int&gt;, Robbery_2018 &lt;int&gt;,
+## #   Robbery_2019 &lt;int&gt;, Robbery_AVG &lt;dbl&gt;, Robbery_CHG &lt;dbl&gt;,
+## #   Robbery_Rate_2019 &lt;dbl&gt;, TheftOver_2014 &lt;int&gt;, TheftOver_2015 &lt;int&gt;,
+## #   TheftOver_2016 &lt;int&gt;, TheftOver_2017 &lt;int&gt;, TheftOver_2018 &lt;int&gt;,
+## #   TheftOver_2019 &lt;int&gt;, TheftOver_AVG &lt;dbl&gt;, TheftOver_CHG &lt;dbl&gt;,
+## #   TheftOver_Rate_2019 &lt;dbl&gt;, Shape__Area &lt;dbl&gt;, Shape__Length &lt;dbl&gt;,
+## #   geometry &lt;POLYGON [°]&gt;</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span id="fig:pie"></span>
+<img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<p class="caption">
+Figure 1: A fancy pie chart.
+</p>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+
